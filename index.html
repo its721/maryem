@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="مريم العبيدي - صحفية ومذيعة تلفزيونية محترفة | Mariam Al-Obaidi - Professional Journalist & TV Presenter" />
+    <meta name="keywords" content="صحفية, مذيعة, تلفزيون, journalist, presenter, Tunisia, Tunisie" />
+    <title data-i18n="meta_title">مريم العبيدي — صحفية ومذيعة</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="lang-ar">
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text" data-i18n="nav_logo">م.ع</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" data-i18n="nav_about">من أنا</a>
+                <a href="#experience" data-i18n="nav_experience">الخبرات</a>
+                <a href="#skills" data-i18n="nav_skills">المهارات</a>
+                <a href="#education" data-i18n="nav_education">التعليم</a>
+                <a href="#portfolio" data-i18n="nav_portfolio">الأعمال</a>
+                <a href="#contact" data-i18n="nav_contact">تواصل</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" data-i18n="nav_about" class="mobile-link">من أنا</a>
+            <a href="#experience" data-i18n="nav_experience" class="mobile-link">الخبرات</a>
+            <a href="#skills" data-i18n="nav_skills" class="mobile-link">المهارات</a>
+            <a href="#education" data-i18n="nav_education" class="mobile-link">التعليم</a>
+            <a href="#portfolio" data-i18n="nav_portfolio" class="mobile-link">الأعمال</a>
+            <a href="#contact" data-i18n="nav_contact" class="mobile-link">تواصل</a>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">صحفية متعددة المنصات</div>
+                <h1 class="hero-name" data-i18n="hero_name">مريم العبيدي</h1>
+                <p class="hero-title" data-i18n="hero_title">صحفية ومذيعة تلفزيونية</p>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    أربط بين الصحافة الرصينة والتقديم التلفزيوني بأسلوب احترافي يعكس معايير الإعلام الدولي
+                </p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero_cta_work">مشاهدة الأعمال</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">تواصل معي</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label" data-i18n="stat_organizations">مؤسسات إعلامية</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">25</span>
+                        <span class="stat-label" data-i18n="stat_age">عاماً</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">2+</span>
+                        <span class="stat-label" data-i18n="stat_platforms">منصات رقمية</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrap">
+                <div class="hero-image-ring"></div>
+                <div class="hero-image-container">
+                    <img src="" alt="مريم العبيدي" class="hero-img" id="heroImg" data-src-base="mypic" />
+                    <div class="hero-img-fallback" id="heroFallback">
+                        <span>م.ع</span>
+                    </div>
+                </div>
+                <div class="hero-location-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span data-i18n="hero_location">تونس</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about_tag">نبذة عني</span>
+                <h2 class="section-title" data-i18n="about_title">من أنا</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead" data-i18n="about_lead">
+                        صحفية تونسية شابة وطموحة، تجمع بين الإعداد التلفزيوني والتقديم الإعلامي بأسلوب يعكس المعايير
+                        الدولية في صناعة الإعلام.
+                    </p>
+                    <p data-i18n="about_p1">
+                        حاصلة على إجازة في الاتصال من معهد الصحافة وعلوم الأخبار، وتواصل مسيرتها الأكاديمية بدراسة
+                        الماجستير في الصحافة متعددة المنصات، مما يمنحها تأهيلاً نظرياً وعملياً متكاملاً.
+                    </p>
+                    <p data-i18n="about_p2">
+                        اكتسبت خبرة ميدانية متنوعة في مؤسسات إعلامية تونسية وليبية، تمتد من الإعداد البرامجي إلى التقديم
+                        التلفزيوني والصحافة الرقمية وإدارة المحتوى على منصات التواصل الاجتماعي.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag" data-i18n="tag_tv">إعلام تلفزيوني</span>
+                        <span class="tag" data-i18n="tag_digital">صحافة رقمية</span>
+                        <span class="tag" data-i18n="tag_multi">متعددة المنصات</span>
+                        <span class="tag" data-i18n="tag_arabic">إعلام عربي</span>
+                    </div>
+                </div>
+                <div class="about-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="info-label" data-i18n="info_location_label">الموقع</span>
+                            <span class="info-value" data-i18n="info_location_value">تونس</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="info-label" data-i18n="info_age_label">العمر</span>
+                            <span class="info-value" data-i18n="info_age_value">25 عاماً</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 14.92z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="info-label" data-i18n="info_phone_label">الهاتف</span>
+                            <span class="info-value">21621447616+</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="info-label" data-i18n="info_specialty_label">التخصص</span>
+                            <span class="info-value" data-i18n="info_specialty_value">صحافة وتقديم تلفزيوني</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="exp_tag">المسيرة المهنية</span>
+                <h2 class="section-title" data-i18n="exp_title">الخبرات</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company" data-i18n="exp1_company">تونسنا TV</h3>
+                                <p class="timeline-role" data-i18n="exp1_role">صحفية معدة برامج</p>
+                            </div>
+                            <div class="timeline-badge">TV</div>
+                        </div>
+                        <p class="timeline-desc" data-i18n="exp1_desc">
+                            إعداد وتقديم برامج تلفزيونية متنوعة، والمشاركة في تطوير المحتوى الإعلامي وفق المعايير
+                            المهنية للإعلام التونسي.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">La Com Chez Vous</h3>
+                                <p class="timeline-role" data-i18n="exp2_role">صحفية اتصال</p>
+                            </div>
+                            <div class="timeline-badge">COM</div>
+                        </div>
+                        <p class="timeline-desc" data-i18n="exp2_desc">
+                            تغطية الفعاليات الإعلامية وإعداد التقارير الصحفية وتطوير استراتيجيات التواصل المؤسسي.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">Karames Production</h3>
+                                <p class="timeline-role" data-i18n="exp3_role">صحفية</p>
+                            </div>
+                            <div class="timeline-badge">PROD</div>
+                        </div>
+                        <p class="timeline-desc" data-i18n="exp3_desc">
+                            المشاركة في إنتاج المحتوى الإعلامي والتقارير المصورة وإعداد السيناريوهات الإعلامية.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company" data-i18n="exp4_company">المعهد الوطني للإحصاء</h3>
+                                <p class="timeline-role" data-i18n="exp4_role">اتصالية</p>
+                            </div>
+                            <div class="timeline-badge">INS</div>
+                        </div>
+                        <p class="timeline-desc" data-i18n="exp4_desc">
+                            إدارة التواصل المؤسسي وإعداد النشرات الإعلامية ودعم استراتيجية الاتصال الخارجي للمؤسسة.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company" data-i18n="exp5_company">حور ميديا — ليبيا</h3>
+                                <p class="timeline-role" data-i18n="exp5_role">صحفية ومذيعة</p>
+                            </div>
+                            <div class="timeline-badge">LY</div>
+                        </div>
+                        <p class="timeline-desc" data-i18n="exp5_desc">
+                            التقديم التلفزيوني وإعداد النشرات الإخبارية للجمهور الليبي، وتغطية الأحداث بأسلوب إعلامي
+                            احترافي.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company" data-i18n="exp6_company">سباراطوري الرياضية</h3>
+                                <p class="timeline-role" data-i18n="exp6_role">مديرة صفحة ومحتوى رقمي</p>
+                            </div>
+                            <div class="timeline-badge">SNS</div>
+                        </div>
+                        <p class="timeline-desc" data-i18n="exp6_desc">
+                            إدارة الصفحة الرياضية شاملاً نشر الأخبار والتصميم الجرافيكي وإنتاج الريلز الاحترافية لزيادة
+                            التفاعل والوصول.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="skills_tag">الكفاءات</span>
+                <h2 class="section-title" data-i18n="skills_title">المهارات</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skill-card" data-animate>
+                    <div class="skill-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name" data-i18n="skill1">إعداد البرامج التلفزية</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-level="92"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate>
+                    <div class="skill-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name" data-i18n="skill2">إعداد النشرات الإخبارية</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-level="88"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate>
+                    <div class="skill-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                            <circle cx="12" cy="12" r="10" />
+                            <polygon points="10 8 16 12 10 16 10 8" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name" data-i18n="skill3">التقديم التلفزيوني</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-level="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate>
+                    <div class="skill-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name" data-i18n="skill4">إعداد الريلز</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-level="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate>
+                    <div class="skill-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name" data-i18n="skill5">الصحافة الرقمية</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-level="87"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate>
+                    <div class="skill-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="9" cy="9" r="2" />
+                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name" data-i18n="skill6">التصميم الجرافيكي</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-level="80"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="edu_tag">الأكاديمي والتدريبي</span>
+                <h2 class="section-title" data-i18n="edu_title">التعليم والتدريب</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="edu-grid">
+
+                <div class="edu-card edu-primary" data-animate>
+                    <div class="edu-card-header">
+                        <div class="edu-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                        </div>
+                        <div class="edu-badge-type" data-i18n="edu_type_univ">جامعي</div>
+                    </div>
+                    <h3 class="edu-institution" data-i18n="edu1_inst">معهد الصحافة وعلوم الأخبار</h3>
+                    <p class="edu-degree" data-i18n="edu1_degree">إجازة في الاتصال</p>
+                    <p class="edu-note" data-i18n="edu1_note">تأهيل أكاديمي في علوم الاتصال والصحافة</p>
+                </div>
+
+                <div class="edu-card edu-primary" data-animate>
+                    <div class="edu-card-header">
+                        <div class="edu-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="8" r="6" />
+                                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+                            </svg>
+                        </div>
+                        <div class="edu-badge-type edu-badge-ongoing" data-i18n="edu_type_ongoing">قيد الدراسة</div>
+                    </div>
+                    <h3 class="edu-institution" data-i18n="edu2_inst">معهد الصحافة وعلوم الأخبار</h3>
+                    <p class="edu-degree" data-i18n="edu2_degree">ماجستير صحافة متعددة المنصات</p>
+                    <p class="edu-note" data-i18n="edu2_note">تعمّق في الصحافة الرقمية وتكنولوجيا الميديا</p>
+                </div>
+
+                <div class="edu-card edu-training" data-animate>
+                    <div class="edu-card-header">
+                        <div class="edu-icon edu-icon-training">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                        </div>
+                        <div class="edu-badge-type edu-badge-training" data-i18n="edu_type_training">تدريب</div>
+                    </div>
+                    <h3 class="edu-institution" data-i18n="edu3_inst">معهد الصحافة وعلوم الأخبار</h3>
+                    <p class="edu-degree" data-i18n="edu3_degree">دورة تدريبية متخصصة</p>
+                    <p class="edu-note" data-i18n="edu3_note">تدريب ميداني في أساسيات الإعداد والإنتاج</p>
+                </div>
+
+                <div class="edu-card edu-training" data-animate>
+                    <div class="edu-card-header">
+                        <div class="edu-icon edu-icon-training">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7" />
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                            </svg>
+                        </div>
+                        <div class="edu-badge-type edu-badge-training" data-i18n="edu_type_training">تدريب</div>
+                    </div>
+                    <h3 class="edu-institution" data-i18n="edu4_inst">معهد الجزيرة للإعلام</h3>
+                    <p class="edu-degree" data-i18n="edu4_degree">إنتاج النشرات الرقمية</p>
+                    <p class="edu-note" data-i18n="edu4_note">تدريب على معايير الجزيرة في الإنتاج الرقمي والنشرات
+                        الإخبارية</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== VIDEO PORTFOLIO ===================== -->
+    <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="port_tag">أعمالي</span>
+                <h2 class="section-title" data-i18n="port_title">معرض الأعمال</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc" data-i18n="port_desc">تقارير ومقابلات وتغطيات تجسّد أسلوبي الإعلامي</p>
+            </div>
+            <div class="video-grid">
+
+                <div class="video-card" data-animate>
+                    <div class="video-thumb"
+                        onclick="openModal('https://www.facebook.com/share/r/18acYrcGbA/?mibextid=wwXIfr', this)">
+                        <div class="video-thumb-bg"></div>
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                        </div>
+                        <div class="video-type-badge" data-i18n="vid1_type">تقرير إخباري</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title" data-i18n="vid1_title">تقرير إخباري — ١</h4>
+                        <a class="video-ext-link" href="https://www.facebook.com/share/r/18acYrcGbA/?mibextid=wwXIfr"
+                            target="_blank" data-i18n="vid_open_fb">مشاهدة على فيسبوك</a>
+                    </div>
+                </div>
+
+                <div class="video-card" data-animate>
+                    <div class="video-thumb"
+                        onclick="openModal('https://www.facebook.com/share/v/1KbWzakMeu/?mibextid=wwXIfr', this)">
+                        <div class="video-thumb-bg"></div>
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                        </div>
+                        <div class="video-type-badge" data-i18n="vid2_type">تغطية</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title" data-i18n="vid2_title">تغطية ميدانية — ١</h4>
+                        <a class="video-ext-link" href="https://www.facebook.com/share/v/1KbWzakMeu/?mibextid=wwXIfr"
+                            target="_blank" data-i18n="vid_open_fb">مشاهدة على فيسبوك</a>
+                    </div>
+                </div>
+
+                <div class="video-card" data-animate>
+                    <div class="video-thumb"
+                        onclick="openModal('https://www.facebook.com/share/r/1D7sR9HCP8/?mibextid=wwXIfr', this)">
+                        <div class="video-thumb-bg"></div>
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                        </div>
+                        <div class="video-type-badge" data-i18n="vid3_type">تقرير إخباري</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title" data-i18n="vid3_title">تقرير إخباري — ٢</h4>
+                        <a class="video-ext-link" href="https://www.facebook.com/share/r/1D7sR9HCP8/?mibextid=wwXIfr"
+                            target="_blank" data-i18n="vid_open_fb">مشاهدة على فيسبوك</a>
+                    </div>
+                </div>
+
+                <div class="video-card" data-animate>
+                    <div class="video-thumb"
+                        onclick="openModal('https://www.facebook.com/share/v/1DoQ3UJiR9/?mibextid=wwXIfr', this)">
+                        <div class="video-thumb-bg"></div>
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                        </div>
+                        <div class="video-type-badge" data-i18n="vid4_type">مقابلة</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title" data-i18n="vid4_title">مقابلة تلفزيونية</h4>
+                        <a class="video-ext-link" href="https://www.facebook.com/share/v/1DoQ3UJiR9/?mibextid=wwXIfr"
+                            target="_blank" data-i18n="vid_open_fb">مشاهدة على فيسبوك</a>
+                    </div>
+                </div>
+
+                <div class="video-card" data-animate>
+                    <div class="video-thumb"
+                        onclick="openModal('https://www.facebook.com/share/v/1JLmeA59Va/?mibextid=wwXIfr', this)">
+                        <div class="video-thumb-bg"></div>
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                        </div>
+                        <div class="video-type-badge" data-i18n="vid5_type">تغطية</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title" data-i18n="vid5_title">تغطية ميدانية — ٢</h4>
+                        <a class="video-ext-link" href="https://www.facebook.com/share/v/1JLmeA59Va/?mibextid=wwXIfr"
+                            target="_blank" data-i18n="vid_open_fb">مشاهدة على فيسبوك</a>
+                    </div>
+                </div>
+
+                <div class="video-card" data-animate>
+                    <div class="video-thumb"
+                        onclick="openModal('https://www.facebook.com/share/v/18aVf6QERD/?mibextid=wwXIfr', this)">
+                        <div class="video-thumb-bg"></div>
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                        </div>
+                        <div class="video-type-badge" data-i18n="vid6_type">برنامج</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title" data-i18n="vid6_title">برنامج ييتلفزيوني</h4>
+                        <a class="video-ext-link" href="https://www.facebook.com/share/v/18aVf6QERD/?mibextid=wwXIfr"
+                            target="_blank" data-i18n="vid_open_fb">مشاهدة على فيسبوك</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact_tag">تواصل</span>
+                <h2 class="section-title" data-i18n="contact_title">تواصل معي</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc" data-i18n="contact_desc">للتعاون المهني والاستفسارات الإعلامية</p>
+            </div>
+
+            <div class="contact-cards contact-cards-centered">
+                <a href="tel:+21621447616" class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 14.92z" />
+                        </svg>
+                    </div>
+                    <div class="contact-card-text">
+                        <span class="contact-card-label" data-i18n="contact_call_label">اتصل بي</span>
+                        <span class="contact-card-value">+216 21 44 76 16</span>
+                    </div>
+                    <div class="contact-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/21620650203" target="_blank" class="contact-card contact-card-whatsapp">
+                    <div class="contact-card-icon contact-icon-wa">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                        </svg>
+                    </div>
+                    <div class="contact-card-text">
+                        <span class="contact-card-label" data-i18n="contact_wa_label">واتساب</span>
+                        <span class="contact-card-value">+216 20 65 02 03</span>
+                    </div>
+                    <div class="contact-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </div>
+                </a>
+
+                <div class="contact-card contact-card-info">
+                    <div class="contact-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div class="contact-card-text">
+                        <span class="contact-card-label" data-i18n="contact_loc_label">الموقع</span>
+                        <span class="contact-card-value" data-i18n="contact_loc_value">تونس، تونس</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-text footer-logo">مريم العبيدي</span>
+                    <p class="footer-tagline" data-i18n="footer_tagline">صحفية ومذيعة تلفزيونية — تونس</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav_about">من أنا</a>
+                    <a href="#portfolio" data-i18n="nav_portfolio">الأعمال</a>
+                    <a href="#contact" data-i18n="nav_contact">تواصل</a>
+                </div>
+                <div class="footer-social">
+                    <a href="tel:+21621447616" class="social-btn" aria-label="Phone">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 14.92z" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/21620650203" target="_blank" class="social-btn social-btn-wa"
+                        aria-label="WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">© 2025 مريم العبيدي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== VIDEO MODAL ===================== -->
+    <div class="modal-overlay" id="videoModal" onclick="closeModal(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- iframe or fallback injected here -->
+            </div>
+            <div class="modal-fallback" id="modalFallback" style="display:none;">
+                <div class="modal-fb-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#1877F2">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </div>
+                <p class="modal-fb-text" data-i18n="modal_fb_text">شاهد الفيديو على فيسبوك</p>
+                <a class="btn btn-primary modal-fb-btn" id="modalFbLink" href="#" target="_blank"
+                    data-i18n="modal_fb_btn">فتح على فيسبوك</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
