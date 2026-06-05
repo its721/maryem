@@ -16,7 +16,7 @@ const TRANSLATIONS = {
         nav_education: "التعليم",
         nav_portfolio: "الأعمال",
         nav_contact: "تواصل",
-        hero_badge: "صحفية متعددة المنصات",
+        hero_badge: "صحفية و مقدمة برامج",
         hero_name: "مريم العبيدي",
         hero_title: "صحفية ومذيعة تلفزيونية",
         hero_subtitle: "أربط بين الصحافة الرصينة والتقديم التلفزيوني بأسلوب احترافي يعكس معايير الإعلام الدولي",
@@ -34,7 +34,7 @@ const TRANSLATIONS = {
         about_p2: "اكتسبت خبرة ميدانية متنوعة في مؤسسات إعلامية تونسية وليبية، تمتد من الإعداد البرامجي إلى التقديم التلفزيوني والصحافة الرقمية وإدارة المحتوى على منصات التواصل الاجتماعي.",
         tag_tv: "إعلام تلفزيوني",
         tag_digital: "صحافة رقمية",
-        tag_multi: "متعددة المنصات",
+        tag_multi: "مقدمة برامج",
         tag_arabic: "إعلام عربي",
         info_location_label: "الموقع",
         info_location_value: "تونس",
@@ -92,19 +92,11 @@ const TRANSLATIONS = {
 
         port_tag: "أعمالي",
         port_title: "معرض الأعمال",
-        port_desc: "تقارير ومقابلات وتغطيات تجسّد أسلوبي الإعلامي",
-        vid1_type: "تقرير إخباري",
-        vid1_title: "تقرير إخباري — ١",
-        vid2_type: "تغطية",
-        vid2_title: "تغطية ميدانية — ١",
-        vid3_type: "تقرير إخباري",
-        vid3_title: "تقرير إخباري — ٢",
-        vid4_type: "مقابلة",
-        vid4_title: "مقابلة تلفزيونية",
-        vid5_type: "تغطية",
-        vid5_title: "تغطية ميدانية — ٢",
-        vid6_type: "برنامج",
-        vid6_title: "برنامج تلفزيوني",
+        port_desc: "مجموعة مختارة من النشرات الإخبارية والتغطيات الرياضية",
+        vid_title_sports: "ريل رياضي",
+        vid1_title: "نشرة إخبارية - ١",
+        vid2_title: "نشرة إخبارية - ٢",
+        vid3_title: "نشرة إخبارية - ٣",
         vid_open_fb: "مشاهدة على فيسبوك",
 
         contact_tag: "تواصل",
@@ -136,7 +128,7 @@ const TRANSLATIONS = {
         nav_education: "Education",
         nav_portfolio: "Portfolio",
         nav_contact: "Contact",
-        hero_badge: "Multimedia Journalist",
+        hero_badge: "Journalist & Program Presenter",
         hero_name: "Mariam Al-Obaidi",
         hero_title: "Journalist & TV Presenter",
         hero_subtitle: "Bridging rigorous journalism and professional broadcast presentation to international media standards",
@@ -154,7 +146,7 @@ const TRANSLATIONS = {
         about_p2: "I have gained diverse field experience across Tunisian and Libyan media outlets, spanning programme production, broadcast presenting, digital journalism, and social media content management.",
         tag_tv: "Broadcast Media",
         tag_digital: "Digital Journalism",
-        tag_multi: "Multimedia",
+        tag_multi: "Presenting",
         tag_arabic: "Arab Media",
         info_location_label: "Location",
         info_location_value: "Tunisia",
@@ -256,7 +248,7 @@ const TRANSLATIONS = {
         nav_education: "Formation",
         nav_portfolio: "Portfolio",
         nav_contact: "Contact",
-        hero_badge: "Journaliste Multimédia",
+        hero_badge: "Journaliste & Présentatrice TV",
         hero_name: "Mariam Al-Obaidi",
         hero_title: "Journaliste & Présentatrice Télévisée",
         hero_subtitle: "Alliance du journalisme rigoureux et de la présentation télévisée selon les critères de l'industrie médiatique internationale",
@@ -274,7 +266,7 @@ const TRANSLATIONS = {
         about_p2: "J'ai acquis une expérience terrain variée au sein de médias tunisiens et libyens, allant de la production de programmes à la présentation télévisée, en passant par le journalisme numérique et la gestion de contenu sur les réseaux sociaux.",
         tag_tv: "Médias télévisés",
         tag_digital: "Journalisme numérique",
-        tag_multi: "Multimédia",
+        tag_multi: "Présentation",
         tag_arabic: "Médias arabes",
         info_location_label: "Localisation",
         info_location_value: "Tunisie",
@@ -547,53 +539,37 @@ const modalFbLink = document.getElementById('modalFbLink');
 let iframeLoadTimeout = null;
 
 function openModal(url, thumbEl) {
-    // Clear previous content
     modalBody.innerHTML = '';
     modalFallback.style.display = 'none';
     modalBody.style.display = 'block';
     modalFbLink.href = url;
-
     videoModal.classList.add('active');
     document.body.style.overflow = 'hidden';
 
-    // Try to build Facebook embed URL
+    // Use a clean iframe approach with the post plugin (stable for Reels)
     const embedUrl = buildFacebookEmbedUrl(url);
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl;
+    iframe.setAttribute('allowfullscreen', 'true');
+    iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+    iframe.style.width = '100%';
+    iframe.style.aspectRatio = '9/16';
+    iframe.style.border = 'none';
+    iframe.style.display = 'block';
 
-    if (embedUrl) {
-        const iframe = document.createElement('iframe');
-        iframe.src = embedUrl;
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.setAttribute('allow', 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share');
-        iframe.setAttribute('scrolling', 'no');
-        iframe.setAttribute('frameborder', '0');
-        iframe.style.width = '100%';
-        iframe.style.aspectRatio = '16/9';
-        iframe.style.display = 'block';
-        iframe.style.border = 'none';
-        iframe.style.minHeight = '0';
-
-        // Fallback if iframe errors or takes too long
-        iframeLoadTimeout = setTimeout(() => showFallback(url), 6000);
-
-        iframe.addEventListener('load', () => {
-            clearTimeout(iframeLoadTimeout);
-        });
-
-        iframe.addEventListener('error', () => {
-            clearTimeout(iframeLoadTimeout);
-            showFallback(url);
-        });
-
-        modalBody.appendChild(iframe);
-    } else {
-        showFallback(url);
-    }
+    modalBody.appendChild(iframe);
 }
 
 function buildFacebookEmbedUrl(shareUrl) {
-    // Use Facebook's oEmbed-style embed
-    const encoded = encodeURIComponent(shareUrl);
-    return `https://www.facebook.com/plugins/video.php?href=${encoded}&show_text=false&width=720&autoplay=1`;
+    if (!shareUrl) return null;
+    let url = shareUrl.split('?')[0].split('&')[0];
+    if (url.includes('/share/r/')) url = url.replace('/share/r/', '/reel/');
+    if (url.includes('/share/v/')) url = url.replace('/share/v/', '/videos/');
+    if (!url.startsWith('http')) url = 'https://' + url;
+
+    const encoded = encodeURIComponent(url);
+    // The post plugin is extremely stable for both Reels and standard posts
+    return `https://www.facebook.com/plugins/post.php?href=${encoded}&show_text=false&width=500`;
 }
 
 function showFallback(url) {
